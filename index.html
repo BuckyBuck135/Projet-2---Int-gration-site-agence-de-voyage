@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booki: pour des vacances de rêve</title>
+    <!-- <link href="images/favicon.png" rel="icon" type="image/x-icon"> -->
+    <script src="https://kit.fontawesome.com/572efc1e1c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <header>
+            <nav>
+                <img src="images/logo/Booki.png" class="logo" alt="logo de Booki">
+                <div class="align-right">
+                    <a href="#hebergements">Hébergements</a>
+                    <a href="#activites">Activités</a>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <section class="search-bar">
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre-ville ou en pleine nature</p>
+            <form>
+                <!-- <label for="location-input"><i class="fa-solid fa-location-dot"></i></label> -->
+                <div><i class="fa-solid fa-location-dot"></i></div>
+                <input type="text" id="location-input" name="location-input" placeholder="Marseille, France">
+                <button type="submit" id="submit-btn">Rechercher</button>
+            </form>
+            <div class="filter-bar">
+                <h3>Filtres</h3>
+                    <div class="btn-wrapper">
+                        <button class="filter-btn flex-container">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <span>Économique</span>
+                        </button>
+                        <button class="filter-btn flex-container">
+                            <i class="fa-solid fa-person"></i>
+                            <span>Familial</span>
+                        </button>
+                        <button class="filter-btn flex-container">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Romantique</span>
+                        </button>
+                        <button class="filter-btn flex-container">
+                            <i class="fa-solid fa-dog"></i>
+                            <span>Animaux autorisés</span>
+                        </button>
+                    </div> <!-- btn-wrapper -->
+            </div> <!-- filter-bar -->
+            <div class="flex-container info">
+                <i class="fa-thin fa-circle-info"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
+
+        <section id="hebergements" class="hebergements">
+            <div class="hebergements-grid">
+
+            </div>
+            <div class="aside-grid">
+
+            </div>
+        </section>
+
+        <section id="activites" class="activites">
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
