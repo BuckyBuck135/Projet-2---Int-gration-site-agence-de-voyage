@@ -96,12 +96,13 @@ input[type="text"] {
   border-bottom: 1px solid #F2F2F2;
   border-left: none;
   border-right: none;
+  padding-left: 1em;
+
 }
 
 input::placeholder {
   color: black;
   font-weight: 700;
-  padding: 0.5em;
 }
 
 #submit-btn {
@@ -122,14 +123,6 @@ input::placeholder {
   align-items: center;
   gap: 1em;
 }
-
-/* working flex */
-/* .btn-wrapper {
-  display: flex;
-  flex: 1;
-  flex-wrap: wrap;
-  justify-content: space-around;
-} */
 
 .btn-wrapper {
   display: grid;
@@ -155,6 +148,99 @@ div.info {
   align-items: baseline;
 }
 
+/* ACCOMODATION SECTION */
+
+.accomodation-section {
+  width: 100%;
+  margin: 2em 0 ;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1em;
+}
+
+/* Hebergements a Marseille */
+
+.accomodation-wrapper,
+.aside-wrapper {
+  /* width: 100%; */
+  /* margin: 0 auto; */
+  padding: 2em 3em;
+  border-radius: 20px;
+  background-color: var(--grey);
+
+}
+
+.accomodation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em;  
+}
+
+.card {
+  margin: 1em 0;
+  background-color: #FFFFFF;
+  border: 5px solid #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px 0px #0000001A;
+}
+
+.card:hover {
+  background-color: var(--light-blue);
+  border: 5px solid var(--light-blue);
+  transition: 0.3s;
+}
+
+.accomodation-img {
+  object-fit: cover;
+  width: 100%;
+  height: 124px;
+  margin-bottom: 0.5em;
+  border-radius: 20px 20px 0px 0px;
+}
+
+div.card p {
+  margin-left: 0.5em;
+}
+
+.accomodation-wrapper h3 {
+  margin: 1.5em 0 1em 0;
+}
+
+.accomodation-grid a,
+.aside-flex a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Aside - les plus populaires */
+
+.aside-card {
+  display: flex;
+  margin: 1em 0;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  border: 5px solid #FFFFFF;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.aside-img {
+  object-fit: cover;
+  width: 140px;
+  height: 140px;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.aside-text {
+  margin: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.star-wrapper {
+  margin-top: auto;
+}
 /*********
  FA
 *********/
@@ -174,6 +260,26 @@ i {
   padding: 6px 12px;
   margin-right: 15px;
 }
+
+.fa-star {
+  font-size: 12px;
+  padding-left: 0;
+  padding-right: 2px;
+}
+
+/* controls the margin for the first star*/
+.margin-left {
+  margin-left: 0.5em;
+}
+
+.blue-star {
+  color: var(--dark-blue);
+}
+
+.grey-star {
+  color: var(--grey)
+}
+
 /*********
  UTILITY
 *********/
