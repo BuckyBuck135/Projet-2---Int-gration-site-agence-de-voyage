@@ -238,35 +238,37 @@ div.card p {
 .activities-section {
   width: 100%;
   margin: 1em 0;
+  
 }
 
-
-.activities-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.activities-flex {
+    display: flex;
+    justify-content: space-between;
     gap: 1em;  
 }
 
 .activity-card {
   margin: 1em 0;
-    /* width: 300px; */
-
   height: 450px;
-  max-height: 450px;
+  min-height: 450px;
   border-radius: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+
 }
 
 .activity-card img {
   height: 390px;
   object-fit: cover;
-  width: 100%;
-  border-radius: 20px 20px 0px 0px;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 20px 20px 0px 0px;  align-items: center;
 }
 
-.activities-grid p {
-  margin: 1em 0 0 1em;
+.activities-flex p {
+  margin: 1em 0 1em 1em;
 }
+
 
 /* FOOTER */
 
