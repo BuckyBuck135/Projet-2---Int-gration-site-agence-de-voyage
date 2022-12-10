@@ -99,6 +99,7 @@ color: #fff;
 background-color: var(--dark-blue);
 border: 1px solid var(--dark-blue);
 border-radius: 0px 15px 15px 0px;
+cursor: pointer;
 }
 
 .submit-btn-desktop {
