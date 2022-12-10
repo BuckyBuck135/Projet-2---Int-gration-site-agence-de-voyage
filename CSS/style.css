@@ -63,7 +63,7 @@ form {
 }
 .fa-location-dot,
 input[type="text"],
-#submit-btn {
+.submit-btn-desktop {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
@@ -91,14 +91,22 @@ input::placeholder {
   font-weight: 700;
 }
 
-#submit-btn {
+.submit-btn-desktop,
+.submit-btn-mobile {
+padding: 0.5em;
+font-weight: 700;
+color: #fff;
+background-color: var(--dark-blue);
+border: 1px solid var(--dark-blue);
+border-radius: 0px 15px 15px 0px;
+}
+
+.submit-btn-desktop {
   width: 150px;
-  padding: 0.5em;
-  font-weight: 700;
-  color: #fff;
-  background-color: var(--dark-blue);
-  border: 1px solid var(--dark-blue);
-  border-radius: 0px 15px 15px 0px;
+}
+
+.submit-btn-mobile {
+  display:none;
 }
 
 .filter-bar {
