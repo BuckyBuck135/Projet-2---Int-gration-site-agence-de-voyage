@@ -1,0 +1,50 @@
+/* MEDIA QUERIES for MOBILE - breakpoint 768px*/
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 20px;
+    }
+
+    .search-bar,
+    .filter-bar,
+    .btn-wrapper {
+      width: 100%;
+    }
+    
+    /* .btn-wrapper {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 50px;;
+      gap: 1em;
+    } */
+
+    .submit-btn-mobile {
+        display: block;
+    }
+
+    .submit-btn-desktop {
+        display: none;
+    }
+
+    .accomodation-section {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        background-color: #F2F2F2;
+
+    }
+
+    .accomodation-wrapper,
+    .aside-wrapper {
+        border-radius: none;
+        background-color: var(--section-grey)
+    }
+    .accomodation-wrapper {
+        order: 2;
+    }
+
+    .aside-wrapper {
+        width: 100%; 
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0;
+  }
+  }
