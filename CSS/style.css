@@ -220,6 +220,24 @@ div.info {
   gap: 1em;  
 }
 
+/* FOOTER */
+
+.footer-flex {
+  padding: 2.5em 4.375em;
+  display: flex;
+  gap: 13em;
+  background-color: var(--section-grey);
+}
+
+ul.footer-column {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.footer-column h2 {
+  margin-bottom: 0.5em;
+}
+
 
 /* CARDS */
 
@@ -309,29 +327,6 @@ div.info {
 
 .activity-card-heading {
   margin: 0.75em 0 1.25em 1.25em;
-}
-
-
-
-
-/* FOOTER */
-
-.footer-flex {
-  width: 100%;
-  padding: 2.5em 4.375em;
-  display: flex;
-  gap: 15em;
-  background-color: var(--section-grey);
-}
-
-ul.footer-column {
-  padding-left: 0;
-  list-style-type: none;
-
-}
-
-.footer-column h2 {
-  margin-bottom: 0.5em;
 }
 
 /*********
