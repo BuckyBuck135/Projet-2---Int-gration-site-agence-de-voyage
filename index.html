@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki: pour des vacances de rêve</title>
-    <!-- <link href="images/favicon.png" rel="icon" type="image/x-icon"> -->
+    <link href="images/logo/favicon.png" rel="icon" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
         <div class="container">
             <nav class="header-nav">
                 <img src="images/logo/Booki.png" class="logo" alt="logo de Booki">
-                <div>
+                <div class="header-links">
                     <a href="#accomodation-section">Hébergements</a>
                     <a href="#activities-section">Activités</a>
                 </div>
@@ -69,7 +69,7 @@
             </section>
         </div>
 
-        <div class="container">
+        <div class="container no-padding-mobile">
             <section id="accomodation-section" class="accomodation-section">
                 <article class="accomodation-wrapper">
                     <h2 class="article-title">Hébergements à Marseille</h2>
@@ -188,38 +188,46 @@
 
         <div class="container">
             <section id="activities-section" class="activities-section">
-                <h2>Activités à Marseille</h2>
+                <h2 class="activity-heading">Activités à Marseille</h2>
                 <div class="activities-flex">
                     <article class="activity-card">
                         <img src="images\activites\4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="activity-img" alt="Vieux-Port à Marseille">
-                        <h3 class="activity-card-heading">
-                            <a class="card-heading-link" href="#">Vieux-Port</a>
-                        </h3>
+                        <div class= activity-text>
+                            <h3 class="activity-card-heading">
+                                <a class="card-heading-link" href="#">Vieux-Port</a>
+                            </h3>
+                        </div>
                     </article>
                     <article class="activity-card">
                         <img src="images\activites\4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="activity-img" alt="Fort de Pomègues à Marseille">
-                        <h3 class="activity-card-heading">
-                            <a class="card-heading-link" href="#">Fort de Pomègues</a>
-                        </h3>
+                        <div class= activity-text>
+                            <h3 class="activity-card-heading">
+                                <a class="card-heading-link" href="#">Fort de Pomègues</a>
+                            </h3>
+                        </div>
                     </article>
                     <article class="activity-card">
                         <img src="images\activites\4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="activity-img" alt="Parc national des Calanques à Marseille">
-                        <h3 class="activity-card-heading">
-                            <a class="card-heading-link" href="#">Parc national des Calanques</a>
-                        </h3>
+                        <div class= activity-text>
+                            <h3 class="activity-card-heading">
+                                <a class="card-heading-link" href="#">Parc national des Calanques</a>
+                            </h3>
+                        </div>
                     </article>
                     <article class="activity-card">
                         <img src="images\activites\4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="activity-img" alt="Notre-Dame-de-la-Garde à Marseille">
-                        <h3 class="activity-card-heading">
-                            <a class="card-heading-link" href="#">Notre-Dame-de-la-Garde</a>
-                        </h3>
+                        <div class= activity-text>
+                            <h3 class="activity-card-heading">
+                                <a class="card-heading-link" href="#">Notre-Dame-de-la-Garde</a>
+                            </h3>
+                        </div>
                     </article>
                 </div> <!--activities-flex-->
             </section>
         </div>
     </main>
     <footer>
-        <div class="container">
+        <div class="container no-padding-mobile">
             <nav class="footer-flex">
 				<ul class="footer-column">
                     <h2>À propos</h2>
@@ -240,25 +248,5 @@
 			</nav>
         </div>
     </footer>
-    <!-- <footer>
-        <div class="container">
-            <div class="footer-column">
-                <h2>À propos</h2>
-                <a href=""><p>Fonctionnement du site</p></a>
-                <a href=""><p>Conditions générales</p></a>
-                <a href=""><p>Données et confidentialité</p></a>
-            </div>
-            <div class="footer-column">
-                <h2>Nos hébergements</h2>
-                <a href=""><p>Charte qualité</p></a>
-                <a href=""><p>Proposer votre hôtel</p></a>
-            </div>
-            <div class="footer-column">
-                <h2>Assistance</h2>
-                <a href=""><p>Centre d’aide</p></a>
-                <a href="mailto:info@booki.com"><p>Nous contacter</p></a>
-            </div>
-        </div>
-    </footer> -->
 </body>
 </html>

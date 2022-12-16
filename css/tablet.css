@@ -1,0 +1,125 @@
+/* MEDIA QUERIES for MOBILE - breakpoint 992px*/
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .container {
+        padding: 0 4.5em;
+    }
+
+    input[type="text"] {
+        min-width: 250px; 
+    }
+
+    .filter-bar {
+        margin: 2em 0 2.2em 0;
+    }
+    
+    .btn-wrapper {
+    gap: 1em;
+    }
+
+    div.info {
+        margin-bottom: 2.4375em;
+    }
+
+    .accomodation-section {
+        flex-wrap: wrap;
+    }
+
+    .accomodation-wrapper {
+        padding: 1.75em 2.5em 1.75em;
+        margin-bottom: 3.3em;
+    }
+
+    .accomodation-card {
+        flex: 1 0 230px;
+    }
+
+    .accomodation-wrapper,
+    .aside-wrapper,
+    .activities-section {
+        width: 100%;
+    }
+
+    .aside-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .aside-flex {
+        gap: 0
+    }
+
+    .aside-card {
+        width: 31%;
+        max-width: 250px;
+        min-height: 144px 
+    }
+    
+    .aside-img {
+        width: 45%;
+    }
+    
+    .aside-text {
+        margin-left: 0.5em;
+        font-size: 0.8125rem;
+    }
+
+    .aside-card-heading {
+        font-size: 0.875rem
+    }
+    
+    .activities-flex {
+        gap: 1.5em;
+    }
+    
+    /* .accomodation-flex,
+    .activities-flex {
+        flex-direction: column;   
+    } */
+    
+    .accomodation-card {
+        max-height: 220px;
+    } 
+    
+    .accomodation-img {
+        max-height: 124px;
+    }    
+
+    .activity-heading {
+        margin-bottom: 1.5em;
+    }
+    
+    .activity-card {
+        height: 267px;
+        width: 182px;
+
+    } 
+    
+    .activity-img {
+        height: 80%;
+        min-height: 134px;
+    }
+    
+    .activity-text {
+        height: 20%;
+        line-height: 18.78px
+    }
+
+    .card-heading-link {
+        font-size: 0.9rem;
+    }
+
+    .footer-flex {
+        /* flex-direction: column; */
+        gap: 2.5em;
+        padding-left: 3em;
+    }
+    
+     ul.footer-column h2 {
+        margin-bottom: 0.3em
+    }
+
+    ul.footer-column a {
+        line-height: 2em;
+    }
+  }
