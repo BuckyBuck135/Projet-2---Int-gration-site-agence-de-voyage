@@ -70,7 +70,7 @@ h1 {
 
 /* MAIN */
 
-/* Search bar */
+/* Search */
 form.search-form {
   display: flex;
   min-height: 30px; /* paired with .fa-location-dot {line-height} */
@@ -171,58 +171,58 @@ div.info {
 }
 
 .accomodation-wrapper {
-width: 67%;
+  width: 67%;
 }
 
 .aside-wrapper {
-width: 31%;
+  width: 31%;
 }
 
 /* Hebergements a Marseille */
 
 .accomodation-wrapper,
 .aside-wrapper {
-padding: 2em 2.5em;
-border-radius: 20px;
-background-color: var(--section-grey)
+  padding: 2em 2.5em;
+  border-radius: 20px;
+  background-color: var(--section-grey)
 }
 
 .accomodation-flex {
-width: 100%;
-display: flex;
-gap: 20px;
-flex-wrap: wrap; 
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; 
 }
 
 .article-title {
-margin-bottom: 23px;
+  margin-bottom: 23px;
 }
 
 h2 {
-  font-size: 22px
-
+  font-size: 1.375rem;
 }
+
 .hide-mobile {
-margin: 2.5em 0 1em 0;
+  margin: 2.5em 0 1em 0;
 }
 
 /* Les plus populaires */
 .aside-flex {
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-gap: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2em;
 }
 
 /* Activités à Marseille */
 .activities-section {
-margin: 1em 0 2em 0;
+  margin: 1em 0 2em 0;
 }
 
 .activities-flex {
-display: flex;
-justify-content: space-between;
-gap: 1em;  
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;  
 }
 
 /* FOOTER */
