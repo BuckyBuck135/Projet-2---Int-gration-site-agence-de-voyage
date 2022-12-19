@@ -1,6 +1,7 @@
 /* MEDIA QUERIES for MOBILE - breakpoint 768px*/
 @media screen and (max-width: 768px) {
 
+    /* Utility */
     .container {
         padding: 0 1.25em;
     }
@@ -8,6 +9,8 @@
     .no-padding-mobile {
         padding: 0;
     }
+
+    /* Header */
     nav.header-nav {
         display: block;
     }
@@ -21,10 +24,11 @@
         margin: 0 ;
         padding: 0 0 1.4em 0;
         width: 49%;
-        border-bottom: 3px solid transparent;
+        border-bottom: 3px solid #F2F2F2;
     }
     
-    nav.header-nav a:hover {
+    nav.header-nav a:hover,
+    nav.header-nav a:active   {
         border-top: none;
         border-bottom: 3px solid var(--dark-blue);
     }
@@ -34,13 +38,14 @@
         margin: 1.9em 0 0.4em 0;
     }
     
+    /* Search bar */
     form.search-form {
         margin-top: 2.25em;
     }
     
     input[type="text"] {
-  width: 100%;
-  min-width: 200px; /*adjust if necessary*/
+        width: 100%;
+        min-width: 200px; /*adjust if necessary*/
     }
     
     .submit-btn-mobile {
@@ -64,12 +69,15 @@
     }
     
     .btn-wrapper {
-    justify-content: space-between;
-    gap: 0;
-}
-        button.filter-btn span {
-            font-size: 0.6875rem;
-        }
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    button.filter-btn span {
+        font-size: 0.6875rem;
+    }
+
+    /* Sections */
     .accomodation-section {
         flex-wrap: wrap;
     }
@@ -99,6 +107,7 @@
     .activities-flex {
         gap: 1.5em;
     }
+
     .accomodation-flex,
     .activities-flex {
         flex-direction: column;   
@@ -128,12 +137,13 @@
     
     .activity-card-heading {
         margin-left: 1.25em;
-      }
+    }
       
-      .activity-text {
-        height: 30%; 
-      }
+    .activity-text {
+    height: 30%; 
+    }
 
+    /* Footer */
     .footer-flex {
         flex-direction: column;
         gap: 2.5em;
@@ -147,4 +157,4 @@
     ul.footer-column a {
         line-height: 2em;
     }
-  }
+}

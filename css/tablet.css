@@ -1,9 +1,12 @@
 /* MEDIA QUERIES for MOBILE - breakpoint 992px*/
 @media screen and (min-width: 769px) and (max-width: 992px) {
+
+    /* Utility */
     .container {
         padding: 0 4.5em;
     }
 
+    /* Search bar */
     input[type="text"] {
         min-width: 250px; 
     }
@@ -20,6 +23,7 @@
         margin-bottom: 2.4375em;
     }
 
+    /* Sections */
     .accomodation-section {
         flex-wrap: wrap;
     }
@@ -72,11 +76,6 @@
         gap: 1.5em;
     }
     
-    /* .accomodation-flex,
-    .activities-flex {
-        flex-direction: column;   
-    } */
-    
     .accomodation-card {
         max-height: 220px;
     } 
@@ -92,7 +91,6 @@
     .activity-card {
         height: 267px;
         width: 182px;
-
     } 
     
     .activity-img {
@@ -109,8 +107,8 @@
         font-size: 0.9rem;
     }
 
+    /* Footer */
     .footer-flex {
-        /* flex-direction: column; */
         gap: 2.5em;
         padding-left: 3em;
     }

@@ -70,7 +70,7 @@ h1 {
 
 /* MAIN */
 
-/* filter section */
+/* Search bar */
 form.search-form {
   display: flex;
   min-height: 30px; /* paired with .fa-location-dot {line-height} */
@@ -421,8 +421,8 @@ UTILITY
   justify-content: space-between;
 }
 
-  /*disables the hover effect for tablet and mobile - breakpoint 993*/
-@media screen and (min-width: 993px) {
+  /*hover effect for desktop and tablet - breakpoint 769px*/
+@media screen and (min-width: 769px) {
 nav.header-nav a:hover {
   cursor: pointer ;
   color: var(--dark-blue);
