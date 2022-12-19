@@ -64,13 +64,13 @@ nav.header-nav a {
 
 
 h1 {
-  font-size: 1.375rem; /* 22px target / 16px default = 1.375 */
+  font-size: 1.375rem; /* 22px target / 16px default = 1.375rem */
   margin: 0;
 }
 
 /* MAIN */
 
-/* Search */
+/* Search bar*/
 form.search-form {
   display: flex;
   min-height: 30px; /* paired with .fa-location-dot {line-height} */
@@ -358,7 +358,7 @@ i {
 
 .fa-solid {
   padding: 0.5em;
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .fa-magnifying-glass {
@@ -374,7 +374,7 @@ i {
 }
 
 .fa-star {
-  font-size: 12px;
+  font-size: 0.75rem;
   padding-left: 0;
   padding-right: 2px;
 }
