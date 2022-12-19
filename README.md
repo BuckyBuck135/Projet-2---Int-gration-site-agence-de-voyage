@@ -1,7 +1,7 @@
 OpenClassrooms # Projet-2---Intégration-site-agence-de-voyage
  
  /* Maquette Figma */
-https://www.figma.com/file/2qpPjSq2sSHlTh4uxAE78n/Maquettes-Booki-(desktop%2C-mobile%2C-tablette)-(Copy)?node-id=3%3A0&t=RLPsFwGNAeU9IlWv-0
+https://www.figma.com/file/aen32jonHhD7JnIEL2b3sE/Maquettes-Booki-(desktop%2C-mobile%2C-tablette)?node-id=3%3A0&t=ZTWgrw8YVzgPl3HJ-0
 
 /* Sessions mentorat */
 -13/12/22
@@ -14,7 +14,7 @@ Aligner l'icone par rapport au texte? => center vertically with text
 
 
 feedback:
-[x]vrifier le gris des sections
+[x]changer gris des sections
 [x]pkoi petites images (thumbnail)
 [x]mettre un mailto pour Nous Contacter
 [x]mettre le max-width 1400 sur le body
@@ -32,4 +32,10 @@ feedback:
 [x]for .card: wrap h2 p and stars in a div
 [x]use h1 tag
 [x]check breakpoints; 992px for desktop / 768px for mobile
-[] check and convert all font sizes to em rem
+
+-19/12/22
+
+Questions :
+ - si j'utilise github desktop, est-ce que j'ai besoin de passer par de la ligne de commande ou d'utiliser shellbash pour le versionnage avec Git?
+
+ - en utilisant l'outil de vérification du CSS, il y a une erreur sur le fichier normalize.css et sur les fichiers font-awesome. Comment faire ?
