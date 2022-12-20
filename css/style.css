@@ -41,7 +41,7 @@ body {
 }
 
 /* Header */    
-nav.header-nav {
+.header-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +52,7 @@ nav.header-nav {
 }
 
 /* links */
-nav.header-nav a {
+.header-nav a {
   margin-bottom: 3.125em;
   padding-top: 2.75em;
   display: inline-block;
@@ -63,22 +63,27 @@ nav.header-nav a {
 }
 
 
-h1 {
+.title {
   font-size: 1.375rem; /* 22px target / 16px default = 1.375rem */
   margin: 0;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 /* MAIN */
 
 /* Search bar*/
-form.search-form {
+.search-form {
   display: flex;
   min-height: 30px; /* paired with .fa-location-dot {line-height} */
   margin: 1.5em 0;
 }
 
 .fa-location-dot,
-input[type="text"],
+.location-input,
 .submit-btn-desktop {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -93,7 +98,7 @@ input[type="text"],
   border-radius: 15px 0px 0px 15px;
 }
 
-input[type="text"] {
+.location-input {
   min-width: 300px;
   border-top: 1px solid var(--section-grey);
   border-bottom: 1px solid var(--section-grey);
@@ -102,7 +107,7 @@ input[type="text"] {
   padding-left: 1em;
 }
 
-input::placeholder {
+.location-input::placeholder {
   color: black;
   font-weight: 700;
 }
@@ -126,7 +131,6 @@ input::placeholder {
 }
 
 .filter-bar {
-  /* width: 100%; */
   margin: 3em 0 2em 0;
   max-width: 914px;
   display: flex;
@@ -160,10 +164,15 @@ input::placeholder {
   cursor: pointer;
 }
 
-div.info {
+.info {
+  display: flex;
+  align-items: center;
   justify-content: left;
 }
 
+.info-text {
+  font-weight: 400;
+}
 /* ACCOMODATION SECTION */
 
 .accomodation-section {
@@ -193,20 +202,16 @@ div.info {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  /* gap: 20px; */
   flex-wrap: wrap; 
 }
 
 .article-title {
   margin-bottom: 23px;
-}
-
-h2 {
   font-size: 1.375rem;
 }
 
+
 .hide-mobile {
-  /* margin: 2.5em 0 1em 0; */
   margin-bottom: 1em;
 }
 
@@ -238,7 +243,7 @@ h2 {
   background-color: var(--section-grey);
 }
 
-ul.footer-column {
+.footer-column {
   padding-left: 0;
   list-style-type: none;
 }
@@ -250,7 +255,7 @@ ul.footer-column {
 }
 
 
-ul.footer-column a {
+.footer-column a {
   font-size: 1rem
 }
 
@@ -263,7 +268,7 @@ ul.footer-column a {
   position: relative;
 }
 
-/* to expand the anchor to the whole card*/
+/* expands the anchor to the whole card*/
 .card-heading-link::after {
   content: '';
   display: block;
@@ -276,7 +281,6 @@ ul.footer-column a {
 }
 
 .accomodation-card {
-  /* flex: 1 0 246px; */
   width: 32%;
   margin-bottom: 1.875em;
   background-color: #FFFFFF;
@@ -286,7 +290,6 @@ ul.footer-column a {
 }
 
 .accomodation-img {
-  /* max-height: 124px; */
   height: clamp(124px,  124px, 144px); /* syntax clamp(min, desired value, max) */
   object-fit: cover;
   width: 100%;
@@ -294,8 +297,12 @@ ul.footer-column a {
   border-radius: 20px 20px 0px 0px;
 }
 
+.accomodation-card-heading {
+  font-size: 1rem;
+  font-weight: 700;
+}
 .accomodation-text {
-  margin-left: 1em;
+  margin-left: 0.75em;
 }
 
 .aside-card {
@@ -314,12 +321,11 @@ ul.footer-column a {
 }
 
 .aside-card-heading {
-  font-size: 1rem
+  font-size: 1rem;
 }
 
 .aside-text {
-  /* width: 60%; */
-  padding-left: 0.5em;
+  padding: 0.25em 0 0.25em 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -430,10 +436,10 @@ UTILITY
 
   /*hover effect for desktop and tablet - breakpoint 769px*/
 @media screen and (min-width: 769px) {
-nav.header-nav a:hover {
+.header-nav a:hover {
   font-weight: 500;
   cursor: pointer ;
   color: var(--dark-blue);
   border-top: 3px solid var(--dark-blue);
-}
+  }
 }

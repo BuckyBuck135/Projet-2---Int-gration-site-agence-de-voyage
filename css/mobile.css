@@ -11,7 +11,7 @@
     }
 
     /* Header */
-    nav.header-nav {
+    .header-nav {
         display: block;
     }
     
@@ -19,7 +19,7 @@
         margin: 1.3em auto 2.375em auto;
     }
 
-    nav.header-nav a {
+    .header-nav a {
         text-align: center;
         margin: 0;
         padding: 0 0 1.4em 0;
@@ -27,24 +27,24 @@
         border-bottom: 3px solid #F2F2F2;
     }
     
-    nav.header-nav a:hover,
-    nav.header-nav a:active {
+    .header-nav a:hover,
+    .header-nav a:active {
         border-top: none;
         border-bottom: 3px solid var(--dark-blue);
         color: var(--dark-blue);
     }
     
-    h1 {
+    .title {
         line-height: 26px;
         margin: 1.9em 0 0.4em 0;
     }
     
     /* Search bar */
-    form.search-form {
+    .search-form {
         margin-top: 2.25em;
     }
     
-    input[type="text"] {
+    .location-input {
         width: 100%;
         min-width: 150px; /*adjust if necessary*/
     }
@@ -70,12 +70,12 @@
     }
     
     .btn-wrapper {
-        flex-wrap: wrap; /*new*/
+        flex-wrap: wrap;
         justify-content: space-between;
         gap: 0;
     }
 
-    button.filter-btn span {
+    .filter-btn span {
         font-size: 0.6875rem;
     }
 
@@ -111,18 +111,28 @@
     }
 
     .accomodation-flex,
-    .activities-flex {
+    .activities-flex,
+    .aside-flex {
         flex-direction: column;   
     }
     
     .accomodation-card {
         max-height: 220px;
-        width: 100%;
     } 
     
+    .accomodation-card,
+    .aside-card,
+    .activity-card {
+        width: 100%;
+        max-width: 100%;
+    }
+    .accomodation-text,
+    .activity-card-heading {
+        margin-left: 0.75em;
+    } 
+
     .accomodation-img {
         max-height: 124px;
-
     }    
 
     .activity-heading {
@@ -139,12 +149,8 @@
         min-height: 134px;
     }
     
-    .activity-card-heading {
-        margin-left: 1.25em;
-    }
-      
     .activity-text {
-    height: 30%; 
+        height: 30%; 
     }
 
     /* Footer */
@@ -154,11 +160,11 @@
         padding-left: 2em;
     }
     
-     ul.footer-column h2 {
+     .footer-column h2 {
         margin-bottom: 0.3em
     }
 
-    ul.footer-column a {
+    .footer-column a {
         line-height: 2em;
     }
 }

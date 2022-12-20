@@ -1,5 +1,5 @@
-/* MEDIA QUERIES for MOBILE - breakpoint 992px*/
-@media screen and (min-width: 769px) and (max-width: 992px) {
+/* MEDIA QUERIES for TABLET - breakpoint 992px*/
+@media screen and (max-width: 992px) {
 
     /* Utility */
     .container {
@@ -7,7 +7,7 @@
     }
 
     /* Search bar */
-    input[type="text"] {
+    .location-input {
         min-width: 250px; 
     }
 
@@ -23,7 +23,7 @@
         padding: 0.25em 0.75em;
     }
 
-    div.info {
+    .info {
         margin-bottom: 2.4375em;
     }
 
@@ -41,6 +41,10 @@
     .aside-wrapper,
     .activities-section {
         width: 100%;
+    }
+
+    .accomodation-text {
+        margin-left: 0.5em;
     }
 
     .aside-flex {
@@ -113,11 +117,11 @@
         padding-left: 3em;
     }
     
-     ul.footer-column h2 {
+     .footer-column h2 {
         margin-bottom: 0.3em
     }
 
-    ul.footer-column a {
+    .footer-column a {
         line-height: 2em;
     }
   }
