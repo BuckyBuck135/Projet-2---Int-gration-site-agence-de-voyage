@@ -39,3 +39,27 @@ Questions :
  - si j'utilise github desktop, est-ce que j'ai besoin de passer par de la ligne de commande ou d'utiliser shellbash pour le versionnage avec Git?
 
  - en utilisant l'outil de vérification du CSS, il y a une erreur sur le fichier normalize.css et sur les fichiers font-awesome. Comment faire ?
+
+ feedback:
+[x] fix display above 992px
+[] fix extra CSS folder on github and check indentation
+[] merge .container with the parent tag
+[] use h6 for "plus de 500 logements..."
+[] search reasons why I get errors on validators
+[] create classes for "naked" selectors h1 etc. / rework selectors that use a semantic tag (eg div.info => .info
+[] rework @media screen and (min-width: 769px) and (max-width: 992px) {
+[x] min-width 320
+
+prepare a powerpoint
+
+during presentation:
+pass the tests
+show different browsers
+show github and commits
+
+potential questions:
+why is important to go through validators
+what's the most difficult part of the project?
+what's semantic
+
+

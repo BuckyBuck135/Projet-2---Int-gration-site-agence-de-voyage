@@ -21,16 +21,17 @@
 
     nav.header-nav a {
         text-align: center;
-        margin: 0 ;
+        margin: 0;
         padding: 0 0 1.4em 0;
         width: 49%;
         border-bottom: 3px solid #F2F2F2;
     }
     
     nav.header-nav a:hover,
-    nav.header-nav a:active   {
+    nav.header-nav a:active {
         border-top: none;
         border-bottom: 3px solid var(--dark-blue);
+        color: var(--dark-blue);
     }
     
     h1 {
@@ -45,7 +46,7 @@
     
     input[type="text"] {
         width: 100%;
-        min-width: 200px; /*adjust if necessary*/
+        min-width: 150px; /*adjust if necessary*/
     }
     
     .submit-btn-mobile {
@@ -69,6 +70,7 @@
     }
     
     .btn-wrapper {
+        flex-wrap: wrap; /*new*/
         justify-content: space-between;
         gap: 0;
     }
@@ -115,10 +117,12 @@
     
     .accomodation-card {
         max-height: 220px;
+        width: 100%;
     } 
     
     .accomodation-img {
         max-height: 124px;
+
     }    
 
     .activity-heading {
