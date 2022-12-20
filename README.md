@@ -1,7 +1,25 @@
 OpenClassrooms # Projet-2---Intégration-site-agence-de-voyage
- 
- /* Figma design*/
+
+/* Project overview */
+Welcome to Booki, a (fictional) travel booking website. I developed this webpage based on a Figma design (see below) using HTML and CSS only. It is currently a pure front-end project / interface project with no JavaScript.
+My website is fully responsive. It has been tested down to 300px wide. It has been sucessfully tested on Chromium and Firefox on desktop, and Safari on mobile.
+
+/* Technical brief and specs */
+- navigation bar with hover effect
+- input field for searching cities
+- filter buttons with hover effect
+- clickable accomodation and activity cards
+- fully responsive for desktop, tablet and mobile displays with breakpoints for tablet (992px) and mobile (768px) and a maximum width of 1400px
+
+/* Live website */
+https://jade-pudding-a6fc50.netlify.app/
+
+/* Figma design*/
 https://www.figma.com/file/aen32jonHhD7JnIEL2b3sE/Maquettes-Booki-(desktop%2C-mobile%2C-tablette)?node-id=3%3A0&t=ZTWgrw8YVzgPl3HJ-0
+
+/* Validators */
+HTML: https://validator.w3.org/ PASSED (1 warning)
+CSS: https://jigsaw.w3.org/css-validator/ PASSED (1 error thrown by by fontawesome.css - not my code)
 
 /* Changelog */
 
