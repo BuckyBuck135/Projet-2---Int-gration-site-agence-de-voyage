@@ -1,0 +1,439 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+input, button {
+  font: inherit;
+}
+
+p, h1, h2, h3 {
+  overflow-wrap: break-word;
+}
+
+/****************
+COLOR PALETTE
+*****************/
+:root {
+--dark-blue: #0065FC;
+--light-blue: #DEEBFF;
+--grey: #D9D9D9;
+--section-grey: #F2F2F2;
+}  
+
+/*********
+LAYOUT
+*********/
+body {
+  font-family:'Raleway', sans-serif;
+}
+
+/* Header */    
+nav.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 61px;
+}
+
+/* links */
+nav.header-nav a {
+  margin-bottom: 3.125em;
+  padding-top: 2.75em;
+  display: inline-block;
+  margin-left: 2em;
+  text-decoration: none;
+  color: black;
+  border-top: 3px solid transparent;
+}
+
+
+h1 {
+  font-size: 1.375rem; /* 22px target / 16px default = 1.375rem */
+  margin: 0;
+}
+
+/* MAIN */
+
+/* Search bar*/
+form.search-form {
+  display: flex;
+  min-height: 30px; /* paired with .fa-location-dot {line-height} */
+  margin: 1.5em 0;
+}
+
+.fa-location-dot,
+input[type="text"],
+.submit-btn-desktop {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.fa-location-dot {
+  line-height: 30px; /* paired with form {min-height} */
+  width: 50px;
+  color: black;
+  background-color: var(--grey);
+  border: 1px solid var(--section-grey);
+  border-right: none;
+  border-radius: 15px 0px 0px 15px;
+}
+
+input[type="text"] {
+  min-width: 300px;
+  border-top: 1px solid var(--section-grey);
+  border-bottom: 1px solid var(--section-grey);
+  border-left: none;
+  border-right: none;
+  padding-left: 1em;
+}
+
+input::placeholder {
+  color: black;
+  font-weight: 700;
+}
+
+.submit-btn-desktop,
+.submit-btn-mobile {
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+  border-radius: 0px 15px 15px 0px;
+  cursor: pointer;
+}
+
+.submit-btn-desktop {
+  width: 150px;
+}
+
+.submit-btn-mobile {
+  display:none;
+}
+
+.filter-bar {
+  /* width: 100%; */
+  margin: 3em 0 2em 0;
+  max-width: 914px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1em;
+
+}
+
+.btn-wrapper {
+  display: flex;
+  gap: 2.25em;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  padding: 0.25em 1.25em;
+  font-weight: 700;
+  background-color: #fff;
+  border: 2px solid var(--grey);
+  border-radius: 25px;
+}
+
+.filter-btn i {
+  padding-left: 0
+}
+
+.filter-btn:hover {
+  background-color:#DEEBFF;
+  cursor: pointer;
+}
+
+div.info {
+  justify-content: left;
+}
+
+/* ACCOMODATION SECTION */
+
+.accomodation-section {
+  margin: 2em 0 4em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accomodation-wrapper {
+  width: 67%;
+}
+
+.aside-wrapper {
+  width: 31%;
+}
+
+/* Hebergements a Marseille */
+
+.accomodation-wrapper,
+.aside-wrapper {
+  padding: 2em 2.5em;
+  border-radius: 20px;
+  background-color: var(--section-grey)
+}
+
+.accomodation-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* gap: 20px; */
+  flex-wrap: wrap; 
+}
+
+.article-title {
+  margin-bottom: 23px;
+}
+
+h2 {
+  font-size: 1.375rem;
+}
+
+.hide-mobile {
+  /* margin: 2.5em 0 1em 0; */
+  margin-bottom: 1em;
+}
+
+/* Les plus populaires */
+.aside-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+/* Activités à Marseille */
+.activities-section {
+  margin: 1em 0 2em 0;
+}
+
+.activities-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;  
+}
+
+/* FOOTER */
+
+.footer-flex {
+  padding: 2.5em 4.375em;
+  display: flex;
+  gap: 13em;
+  background-color: var(--section-grey);
+}
+
+ul.footer-column {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.footer-heading {
+  margin-bottom: 0.5em;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+
+ul.footer-column a {
+  font-size: 1rem
+}
+
+
+/* CARDS */
+
+.accomodation-card,
+.aside-card,
+.activity-card {
+  position: relative;
+}
+
+/* to expand the anchor to the whole card*/
+.card-heading-link::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.accomodation-card {
+  /* flex: 1 0 246px; */
+  width: 32%;
+  margin-bottom: 1.875em;
+  background-color: #FFFFFF;
+  border: 5px solid #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px 0px #0000001A;
+}
+
+.accomodation-img {
+  /* max-height: 124px; */
+  height: clamp(124px,  124px, 144px); /* syntax clamp(min, desired value, max) */
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 0.5em;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.accomodation-text {
+  margin-left: 1em;
+}
+
+.aside-card {
+  display: flex;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  border: 5px solid #FFFFFF;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.aside-img {
+  object-fit: cover;
+  width: 40%;
+  height: clamp(144px,  164px, 100vh); /*syntax clamp(min, desired value, max)*/
+  border-radius: 20px 0px 0px 20px;
+}
+
+.aside-card-heading {
+  font-size: 1rem
+}
+
+.aside-text {
+  /* width: 60%; */
+  padding-left: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.star-wrapper {
+  margin-top: auto;
+}
+
+.activity-card {
+  height: 450px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.activity-img  {
+  height: 85%;
+  object-fit: cover;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 20px 20px 0px 0px;  
+  align-items: center;
+}
+
+.activity-card-heading {
+  margin-left: 1.25em;
+}
+
+.activity-text {
+  height: 15%;
+  display: flex;
+  align-items: center;
+}
+
+/*********
+FA
+*********/
+i {
+  text-align: center;  
+  color: var(--dark-blue);
+}
+
+.fa-solid {
+  padding: 0.5em;
+  font-size: 1.2rem;
+}
+
+.fa-magnifying-glass {
+  color: #fff;
+}
+
+.fa-info {
+  font-size: 0.8rem;
+  border: 1px solid var(--grey);
+  border-radius: 50%;
+  padding: 0.4em 0.8em;
+  margin-right: 15px;
+}
+
+.fa-star {
+  font-size: 0.75rem;
+  padding-left: 0;
+  padding-right: 2px;
+}
+
+.blue-star {
+  color: var(--dark-blue);
+}
+
+.grey-star {
+  color: var(--grey)
+}
+
+.fa-chart-line {
+  padding-right: 0;
+}
+
+/*********
+UTILITY
+*********/
+
+.accomodation-flex a,
+.aside-flex a,
+.activities-section a,
+.footer-column a {
+  text-decoration: none;
+  color: black;
+}
+
+/* containers */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 3.125em
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+  /*hover effect for desktop and tablet - breakpoint 769px*/
+@media screen and (min-width: 769px) {
+nav.header-nav a:hover {
+  font-weight: 500;
+  cursor: pointer ;
+  color: var(--dark-blue);
+  border-top: 3px solid var(--dark-blue);
+}
+}
