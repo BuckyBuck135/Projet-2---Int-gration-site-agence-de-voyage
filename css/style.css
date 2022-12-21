@@ -322,6 +322,8 @@ body {
 
 .aside-img {
   object-fit: cover;
+  min-width: 35%; /*added for FF support*/
+  max-width: 90px; /*added for FF support*/
   width: 40%;
   height: clamp(124px, 154px, 164px); /*syntax clamp(min, desired value, max)*/
   border-radius: 20px 0px 0px 20px;

@@ -48,6 +48,8 @@ v1.2
 -  created classes for "naked" selectors h1 etc. / rework selectors that use a semantic tag (eg div.info => .info;
 -  renamed @media screen and (min-width: 769px) and (max-width: 992px) {;
 -  min-width 320 => tested down to 300px;
+-  image width issue on FF 
+
 
 prepare a powerpoint
 
