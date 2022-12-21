@@ -1,7 +1,7 @@
 OpenClassrooms # Projet-2---Intégration-site-agence-de-voyage
 
 /* Project overview */
-Welcome to Booki, a (fictional) travel booking website. I developed this webpage based on a Figma design (see below) using HTML and CSS only. It is currently a pure front-end project / interface project with no JavaScript.
+Welcome to Booki, a (fictional) travel booking website. I developed this webpage based on a Figma design (see below) using HTML and CSS only. It is currently a pure front-end / interface project with no JavaScript.
 My website is fully responsive. It has been tested down to 300px wide. It has been sucessfully tested on Chromium and Firefox on desktop, and Safari on mobile.
 
 /* Technical brief and specs */
