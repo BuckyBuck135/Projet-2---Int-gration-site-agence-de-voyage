@@ -304,12 +304,19 @@ body {
   border-radius: 20px 20px 0px 0px;
 }
 
-.accomodation-card-heading {
-  font-size: 1rem;
-  font-weight: 700;
-}
 .accomodation-text {
   margin-left: 0.75em;
+}
+
+.accomodation-card-heading,
+.aside-card-heading,
+.activity-card-heading {
+  font-size: 1rem;
+}
+
+.accomodation-text > p,
+.aside-text > p  {
+  font-size: 0.875rem;
 }
 
 .aside-card {
@@ -329,9 +336,6 @@ body {
   border-radius: 20px 0px 0px 20px;
 }
 
-.aside-card-heading {
-  font-size: 1rem;
-}
 
 .aside-text {
   padding: 0.25em 0 0.25em 0.5em;
