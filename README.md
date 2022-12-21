@@ -11,6 +11,7 @@ My website is fully responsive. It has been tested down to 300px wide. It has be
 - clickable accomodation and activity cards
 - fully responsive for desktop, tablet and mobile displays with breakpoints for tablet (992px) and mobile (768px) and a maximum width of 1400px
 
+![](https://github.com/BuckyBuck135/Projet-2---Integration-site-agence-de-voyage/blob/main/images/booki.gif)
 /* Live website */
 https://jade-pudding-a6fc50.netlify.app/
 
