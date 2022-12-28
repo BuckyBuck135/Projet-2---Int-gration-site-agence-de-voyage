@@ -221,10 +221,7 @@ body {
 .display-more {
   margin-top: 0.75em;
 }
-/* 
-.hide-mobile {
-  margin-bottom: 1em;
-} */
+
 
 /* Les plus populaires */
 .aside-flex {
@@ -450,13 +447,3 @@ UTILITY
 .space-between {
   justify-content: space-between;
 }
-
-  /*hover effect for desktop and tablet - breakpoint 769px*/
-/* @media screen and (min-width: 769px) {
-.header-nav a:hover {
-  font-weight: 500;
-  cursor: pointer ;
-  color: var(--dark-blue);
-  border-top: 3px solid var(--dark-blue);
-  }
-} */
