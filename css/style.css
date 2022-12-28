@@ -63,6 +63,12 @@ body {
   border-top: 3px solid transparent;
 }
 
+.header-nav a:hover {
+  font-weight: 500;
+  cursor: pointer ;
+  color: var(--dark-blue);
+  border-top: 3px solid var(--dark-blue);
+  }
 
 .title {
   font-size: 1.375rem; /* 22px target / 16px default = 1.375rem */
@@ -446,11 +452,11 @@ UTILITY
 }
 
   /*hover effect for desktop and tablet - breakpoint 769px*/
-@media screen and (min-width: 769px) {
+/* @media screen and (min-width: 769px) {
 .header-nav a:hover {
   font-weight: 500;
   cursor: pointer ;
   color: var(--dark-blue);
   border-top: 3px solid var(--dark-blue);
   }
-}
+} */

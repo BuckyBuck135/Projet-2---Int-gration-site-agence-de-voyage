@@ -6,6 +6,10 @@
         padding: 0 4.5em;
     }
 
+    .header-nav a:hover {
+        font-weight: 400;
+        }
+    
     /* Search bar */
     .location-input {
         min-width: 250px; 
