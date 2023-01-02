@@ -115,6 +115,11 @@
         font-size: 0.9rem;
     }
 
+    .display-more {
+        margin-top: 0.5em;
+        margin-bottom: 1em;
+    }
+
     /* Footer */
     .footer-flex {
         gap: 2.5em;
