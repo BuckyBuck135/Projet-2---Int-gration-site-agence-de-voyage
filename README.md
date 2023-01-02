@@ -14,7 +14,7 @@ This website is fully responsive. It has been sucessfully tested on Chromium and
 ![](https://github.com/BuckyBuck135/Projet-2---Integration-site-agence-de-voyage/blob/main/images/booki.gif)
 
 /* Live website */
-https://jade-pudding-a6fc50.netlify.app/
+https://openclassrooms-booki.netlify.app/
 
 /* Figma design*/
 https://www.figma.com/file/aen32jonHhD7JnIEL2b3sE/Maquettes-Booki-(desktop%2C-mobile%2C-tablette)?node-id=3%3A0&t=ZTWgrw8YVzgPl3HJ-0
